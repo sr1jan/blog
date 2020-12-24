@@ -11,11 +11,7 @@ export default function Layout({ children, home }: { children: React.ReactNode; 
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preload" href="/fonts/Montserrat/Montserrat-Thin.ttf" as="font" crossOrigin="" />
-        <link rel="preload" href="/fonts/Montserrat/Montserrat-Light.ttf" as="font" crossOrigin="" />
         <link rel="preload" href="/fonts/Montserrat/Montserrat-Regular.ttf" as="font" crossOrigin="" />
-        <link rel="preload" href="/fonts/Montserrat/Montserrat-Medium.ttf" as="font" crossOrigin="" />
-        <link rel="preload" href="/fonts/Montserrat/Montserrat-Bold.ttf" as="font" crossOrigin="" />
         <meta name="description" content="genz stoic" />
         <meta
           property="og:image"
