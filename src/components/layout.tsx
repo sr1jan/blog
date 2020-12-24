@@ -25,12 +25,16 @@ export default function Layout({ children, home }: { children: React.ReactNode; 
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="theme-color" content="#4285f4" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <header className={styles.header}>
         {home ? (
           <>
             <img
               src="/images/profile.jpg"
+              width={200}
+              height={200}
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt="Digital art by Werner Hornung"
             />
@@ -45,6 +49,8 @@ export default function Layout({ children, home }: { children: React.ReactNode; 
               <a>
                 <img
                   src="/images/profile.jpg"
+                  width={100}
+                  height={100}
                   className={`${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt="Digital art by Werner Hornung"
                 />
