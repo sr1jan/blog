@@ -1,1 +1,3 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+# GenZ Stoic
+
+a place where I try to structure my thoughts using words.

@@ -5,7 +5,18 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
+  },
+  "husky": {
+      "hooks": {
+          "pre-commit": "lint-staged"
+      }
+  },
+  "lint-staged": {
+      "*.{js,ts,tsx}": [
+          "eslint --fix"
+      ]
   },
   "dependencies": {
     "date-fns": "^2.11.1",
@@ -19,6 +30,13 @@
   "devDependencies": {
     "@types/node": "^13.11.0",
     "@types/react": "^16.9.32",
+    "@typescript-eslint/eslint-plugin": "^4.11.0",
+    "@typescript-eslint/parser": "^4.11.0",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-react": "^7.21.5",
+    "prettier": "^2.2.1",
     "typescript": "^3.8.3"
   }
 }
