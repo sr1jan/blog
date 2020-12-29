@@ -38,10 +38,6 @@
   font-display: swap;
 }
 
-html {
-  overflow: auto;
-}
-
 html,
 body {
   padding: 0;
@@ -51,7 +47,7 @@ body {
   font-size: 17px;
   color: #F8F8F8;
   /* background-color: #0f1112; */
-  background-image: url("/images/hero-bg.png");
+  /* background-image: url("/images/hero-bg.png"); */
   overflow-y: auto;
 }
 
