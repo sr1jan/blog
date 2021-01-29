@@ -23,8 +23,8 @@ export default function Layout({ children, home }: { children: React.ReactNode; 
       <div className={styles.container}>
         <Head>
           <link rel="icon" href="/favicon.ico" />
-          <link rel="preload" href="/fonts/Montserrat/Montserrat-Regular.ttf" as="font" crossOrigin="" />
-          <link rel="preload" href="/fonts/Montserrat/Montserrat-Bold.ttf" as="font" crossOrigin="" />
+          {/* <link rel="preload" href="/fonts/Montserrat/Montserrat-Regular.ttf" as="font" crossOrigin="" /> */}
+          {/* <link rel="preload" href="/fonts/Montserrat/Montserrat-Bold.ttf" as="font" crossOrigin="" /> */}
           <meta name="description" content="GenZ Stoic Blog" />
           <meta property="og:image" content="/images/profile.jpg" />
           <meta name="og:title" content={siteTitle} />
@@ -38,8 +38,8 @@ export default function Layout({ children, home }: { children: React.ReactNode; 
               <Image
                 priority={true}
                 src="/images/profile.jpg"
-                width={160}
-                height={160}
+                width={140}
+                height={140}
                 className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
                 alt="Digital art by Werner Hornung"
               />
