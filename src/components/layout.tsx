@@ -16,7 +16,7 @@ export default function Layout({ children, home }: { children: React.ReactNode; 
           alt="Hero Background"
           priority={true}
           layout="fill"
-          quality={95}
+          quality={100}
           objectFit="cover"
         />
       </div>
@@ -25,16 +25,11 @@ export default function Layout({ children, home }: { children: React.ReactNode; 
           <link rel="icon" href="/favicon.ico" />
           <link rel="preload" href="/fonts/Montserrat/Montserrat-Regular.ttf" as="font" crossOrigin="" />
           <link rel="preload" href="/fonts/Montserrat/Montserrat-Bold.ttf" as="font" crossOrigin="" />
-          <meta name="description" content="genz stoic" />
-          <meta
-            property="og:image"
-            content={`https://og-image.now.sh/${encodeURI(
-              siteTitle,
-            )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-          />
+          <meta name="description" content="GenZ Stoic Blog" />
+          <meta property="og:image" content="/images/profile.jpg" />
           <meta name="og:title" content={siteTitle} />
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="theme-color" content="#4285f4" />
+          <meta name="twitter:card" content="summary" />
+          <meta name="theme-color" content="#0F0F0F" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Head>
         <header className={styles.header}>
