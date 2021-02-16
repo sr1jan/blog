@@ -10,28 +10,27 @@ export const siteTitle = 'GenZ Stoic';
 export default function Layout({ children, home }: { children: React.ReactNode; home?: boolean }): JSX.Element {
   return (
     <>
-      <div className={styles.bgContainer}>
-        <Image
-          src="/images/hero-bg.png"
-          alt="Hero Background"
-          priority={true}
-          layout="fill"
-          quality={100}
-          objectFit="cover"
-        />
-      </div>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="preload" href="/fonts/Montserrat/Montserrat-Regular.ttf" as="font" crossOrigin="" />
+        <link rel="preload" href="/fonts/Montserrat/Montserrat-Bold.ttf" as="font" crossOrigin="" />
+        <meta name="description" content="GenZ Stoic Blog" />
+        <meta property="og:image" content="/images/profile.jpg" />
+        <meta name="og:title" content={siteTitle} />
+        <meta name="twitter:card" content="summary" />
+        <meta name="theme-color" content="#0F0F0F" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
+      <Image
+        className={styles.heroImg}
+        src="/images/hero-bg.png"
+        alt="Hero Background"
+        layout="fill"
+        priority={true}
+        quality={100}
+        objectFit="cover"
+      />
       <div className={styles.container}>
-        <Head>
-          <link rel="icon" href="/favicon.ico" />
-          <link rel="preload" href="/fonts/Montserrat/Montserrat-Regular.ttf" as="font" crossOrigin="" />
-          <link rel="preload" href="/fonts/Montserrat/Montserrat-Bold.ttf" as="font" crossOrigin="" />
-          <meta name="description" content="GenZ Stoic Blog" />
-          <meta property="og:image" content="/images/profile.jpg" />
-          <meta name="og:title" content={siteTitle} />
-          <meta name="twitter:card" content="summary" />
-          <meta name="theme-color" content="#0F0F0F" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        </Head>
         <header className={styles.header}>
           {home ? (
             <>
