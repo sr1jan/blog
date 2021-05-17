@@ -21,15 +21,6 @@ export default function Layout({ children, home }: { children: React.ReactNode; 
         <meta name="theme-color" content="#0F0F0F" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <Image
-        className={styles.heroImg}
-        src="/images/hero-bg.png"
-        alt="Hero Background"
-        layout="fill"
-        priority={true}
-        quality={100}
-        objectFit="cover"
-      />
       <div className={styles.container}>
         <header className={styles.header}>
           {home ? (
