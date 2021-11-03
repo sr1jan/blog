@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:post": "next-remote-watch ./posts/existential-crisis-and-the-road-ahead.md",
     "build": "next build",
     "start": "next start",
     "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
@@ -22,6 +23,7 @@
     "date-fns": "^2.11.1",
     "gray-matter": "^4.0.2",
     "next": "^10.0.0",
+    "next-remote-watch": "^1.0.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "remark": "^12.0.0",
