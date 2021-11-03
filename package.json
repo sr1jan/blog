@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "dev:post": "next-remote-watch ./posts/existential-crisis-and-the-road-ahead.md",
+    "dev:post": "next-remote-watch ./posts",
     "build": "next build",
     "start": "next start",
     "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"

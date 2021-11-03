@@ -20,6 +20,7 @@ export default function Layout({ children, home }: { children: React.ReactNode; 
         <meta name="twitter:card" content="summary" />
         <meta name="theme-color" content="#0F0F0F" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {process.env.NODE_ENV === 'development' && <script src="/scripts/noScroll.js" type="text/javascript" />}
       </Head>
       <div className={styles.container}>
         <header className={styles.header}>
