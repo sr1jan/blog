@@ -1,5 +1,7 @@
 ---
 title: 'Does GenZ have a shorter attention span?'
+description: 'Frequent context switching to ensure constant or increasing flow of dopamine is the major cause behind focus degradation.'
+image: 'http://www.insight180.com//wp-content/uploads/2013/08/noise1-690x375.png'
 date: '2020-12-24'
 ---
 

@@ -25,7 +25,7 @@ export function getSortedPostsData(): postDataProps[] {
     // Combine the data with the id
     return {
       id,
-      ...(matterResult.data as { date: string; title: string }),
+      ...(matterResult.data as { date: string; title: string; description: string; image: string }),
     };
   });
   // Sort posts by date
@@ -64,6 +64,6 @@ export async function getPostData(id: string): Promise<postDataProps> {
   return {
     id,
     contentHtml,
-    ...(matterResult.data as { date: string; title: string }),
+    ...(matterResult.data as { date: string; title: string; description: string; image: string }),
   };
 }

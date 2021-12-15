@@ -1,5 +1,7 @@
 ---
 title: 'Basic introduction to Bayesian Methodology'
+description: 'Bayesian methodology is about having a prior belief (prior probability) of an event and updating that belief on seeing new evidence (likelihood) and hence as a result forming new belief (posterior probability) about the event.'
+image: '/images/output_14_0.png'
 date: '2021-12-15'
 ---
 
@@ -100,7 +102,7 @@ The “and” or conjunction is denoted using the upside down capital “U” op
 
 `P(A ^ B), P(A, B), P(AB)`
 
-- The joint probability for events A and B is calculated the probability of event A given event B multiplied by the probability of event B.
+The joint probability for events A and B is calculated as the probability of event A given event B multiplied by the probability of event B.
 
 This can be stated formally as follows: `P(A and B) = P(A given B) * P(B)`
 
@@ -135,7 +137,7 @@ _The probability of one event given the occurrence of another event is called th
 
   - **Independent event:** Each event is not affected by any other events.
 
-    For example: Tossing of a coind, each toss of a coin is a perfect isolated thing. What it did in the past will not affect the current toss.
+    For example: Tossing of a coin, each toss of a coin is a perfect isolated thing. What it did in the past will not affect the current toss.
 
   - **Dependent event:** They can be affected by previous events
 

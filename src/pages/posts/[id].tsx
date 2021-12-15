@@ -9,7 +9,7 @@ import { postDataProps, postIdProps } from '../../types';
 
 export default function Post({ postData }: { postData: postDataProps }): JSX.Element {
   return (
-    <Layout>
+    <Layout title={postData.title} description={postData.description} image={postData.image}>
       <Head>
         <title>{postData.title}</title>
       </Head>
