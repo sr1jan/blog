@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
@@ -12,9 +12,9 @@ export const siteTitle = 'GenZ Stoic';
 interface Props {
   children: React.ReactNode;
   home?: boolean;
-  title: string;
-  description: string;
-  image: string;
+  title?: string;
+  description?: string;
+  image?: string;
 }
 
 // function numToHex(num: number) {
