@@ -27,7 +27,7 @@ export default function Layout({
   home,
   title = siteTitle,
   description = 'Genz Stoic Blog',
-  image = '/images/profile.jp',
+  image = '/images/profile.jpg',
 }: Props): JSX.Element {
   // const [bgValue, setBgValue] = useState(17);
 
@@ -52,6 +52,9 @@ export default function Layout({
         <meta property="og:image" content={image} />
         <meta name="og:title" content={title} />
         <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={image} />
         <meta name="theme-color" content="#0F0F0F" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         {process.env.NODE_ENV === 'development' && <script src="/scripts/noScroll.js" type="text/javascript" />}
