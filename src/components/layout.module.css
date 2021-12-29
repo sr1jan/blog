@@ -4,9 +4,10 @@
 
 .container {
   position: relative;
-  max-width: 60vw;
+  max-width: 80vw;
   padding: 0 1rem;
   margin: 2rem auto 4rem;
+  overflow-x: hidden;
 }
 
 @media screen and (max-width: 425px) {
@@ -17,7 +18,13 @@
 
 @media screen and (min-width: 425px) and (max-width: 800) {
   .container {
-    max-width: 80vw;
+    max-width: 90vw;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    max-width: 70vw;
   }
 }
 
@@ -35,6 +42,26 @@
 .headerHomeImage {
   width: 8rem;
   height: 8rem;
+}
+
+.lightIconContainer {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  /* border-radius: 9999999px; */
+  /* box-shadow: 0px 0px 5px 2px black; */
+}
+
+.lightIcon {
+  fill: 'white';
+  cursor: pointer;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.lightIcon:hover {
+  opacity: 1;
 }
 
 .bgSliderContainer {

@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
@@ -17,6 +17,17 @@ interface Props {
   image?: string;
 }
 
+// const THEME = {
+//   dark: {
+//     txtColor: '#f8f8f8',
+//     bgColor: '#111111',
+//   },
+//   light: {
+//     txtColor: '#111111',
+//     bgColor: '#f8f8f8',
+//   },
+// };
+
 // function numToHex(num: number) {
 //   const hex = num.toString(16);
 //   return hex.length == 1 ? '0' + hex : hex;
@@ -30,17 +41,41 @@ export default function Layout({
   image = '/images/profile.jpg',
 }: Props): JSX.Element {
   // const [bgValue, setBgValue] = useState(17);
+  // const [themeMode, setThemeMode] = useState<'dark' | 'light'>('dark');
 
   // const handleBgChange = (event: React.ChangeEvent<HTMLInputElement>) => {
   //   setBgValue(parseInt(event.target.value));
   // };
 
+  // const toggleTheme = () => {
+  //   setThemeMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
+  // };
+
+  //   useEffect(() => {
+  //     const html = document.getElementsByTagName('html')[0];
+  //     const body = document.getElementsByTagName('body')[0];
+  //     const txtValue = 255 - bgValue;
+  //     html.style.color = `rgb(${txtValue}, ${txtValue}, ${txtValue})`;
+  //     body.style.color = `rgb(${txtValue}, ${txtValue}, ${txtValue})`;
+  //     html.style.backgroundColor = `rgb(${bgValue}, ${bgValue}, ${bgValue})`;
+  //     body.style.backgroundColor = `rgb(${bgValue}, ${bgValue}, ${bgValue})`;
+  //   }, [bgValue]);
+
   // useEffect(() => {
   //   const html = document.getElementsByTagName('html')[0];
   //   const body = document.getElementsByTagName('body')[0];
-  //   html.style.backgroundColor = `rgb(${bgValue}, ${bgValue}, ${bgValue})`;
-  //   body.style.backgroundColor = `rgb(${bgValue}, ${bgValue}, ${bgValue})`;
-  // }, [bgValue]);
+  //   if (themeMode === 'dark') {
+  //     html.style.color = THEME.dark.txtColor;
+  //     body.style.color = THEME.dark.txtColor;
+  //     html.style.backgroundColor = THEME.dark.bgColor;
+  //     body.style.backgroundColor = THEME.dark.bgColor;
+  //   } else {
+  //     html.style.color = THEME.light.txtColor;
+  //     body.style.color = THEME.light.txtColor;
+  //     html.style.backgroundColor = THEME.light.bgColor;
+  //     body.style.backgroundColor = THEME.light.bgColor;
+  //   }
+  // }, [themeMode]);
 
   return (
     <>
@@ -72,6 +107,18 @@ export default function Layout({
                 value={bgValue}
                 className={styles.bgSlider}
                 id="myRange"
+              />
+            </div>
+            */}
+            {/*
+            <div className={styles.lightIconContainer}>
+              <Image
+                className={styles.lightIcon}
+                src="/images/hangLight.png"
+                width={30}
+                height={40}
+                alt="Tubelight - dark & light modes"
+                onClick={toggleTheme}
               />
             </div>
             */}

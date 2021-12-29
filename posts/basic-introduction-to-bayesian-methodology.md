@@ -27,7 +27,7 @@ date: '2021-12-15'
   - Here `X` is a **discrete random variable** as it can only take discrete values. Discrete data can only take certain values, for example: number of students in a class, we can't have half a student.
 
   <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Random_Variable_as_a_Function-en.svg/440px-Random_Variable_as_a_Function-en.svg.png" width="60%" style="background:#FFFFFF;padding: 0px 10px 0px"></img>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Random_Variable_as_a_Function-en.svg/440px-Random_Variable_as_a_Function-en.svg.png" width="70%" style="background:#FFFFFF;padding: 0px 10px 0px"></img>
   </p>
 
   - Temperature, age, height, weight are all examples of **continuous random variable** as it can take infinitely many values. For example, a random variable measuring the time taken for something to be done is continuous since there are an infinite number of possible times that can be taken.
@@ -39,13 +39,13 @@ date: '2021-12-15'
   - **Bernoulli distribution** can be used to represent the random variable `X` modelling two possible outcomes. A bernoulli distribution is discrete, as opposed to continuous, since only 1 or 0 is a valid response.
 
   <p align="center">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRq5ZCwpkt6VoWgNGKJMI1c7jypa5eUUnz0YgEK1gX0WF1DKuQl" width="60%"></img>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRq5ZCwpkt6VoWgNGKJMI1c7jypa5eUUnz0YgEK1gX0WF1DKuQl" width="70%"></img>
   </p>
 
   - The most commonly used distribution is the **Gaussian distribution**,also referred as **Normal distribution** or **bell curve** is used frequently in finance, investing, science, and engineering.
 
   <p align="center">
-  <img src="https://miro.medium.com/max/2000/1*s_4OIdPSzuZcevhBdOmCQA.png" width="60%" style="background:#FFFFFF;padding: 0px 10px 0px"></img>
+  <img src="https://miro.medium.com/max/2000/1*s_4OIdPSzuZcevhBdOmCQA.png" width="70%" style="background:#FFFFFF;padding: 0px 10px 0px"></img>
   </p>
 
   <p align="center">
@@ -77,18 +77,8 @@ date: '2021-12-15'
 ### Mathematical representation of Bayes's theorem is given by,
 
   <p align="center" >
-  <img src="https://miro.medium.com/max/1400/1*CnoTGGO7XeUpUMeXDrIfvA.png" width="60%" alt="Bayes' Theorem"></img>
+  <img src="https://miro.medium.com/max/1400/1*CnoTGGO7XeUpUMeXDrIfvA.png" width="70%" alt="Bayes' Theorem"></img>
   </p>
-
-```
-  A, B	  = 	events
-
-  P(A|B)	= 	probability of A given B is true
-
-  P(B|A)	= 	probability of B given A is true
-
-  P(A), P(B) =    the independent probabilities of A and B
-```
 
 > There are specific techniques that can be used to quantify the probability for multiple random variables, such as the `joint`, `marginal`, and `conditional probability`. These techniques provide the basis for a probabilistic understanding of fitting a predictive model to data.
 
@@ -125,7 +115,7 @@ _Marginal probability is the probability of an event irrespective of the outcome
 - When there are an infinite number of outcomes, it is necessary to integrate over all outcomes to calculate `P(B)` using the law of total probability.
 - Often, `P(B)` is difficult to calculate as the calculation would involve sums or integrals that would be time-consuming to evaluate, so often only the product of the prior and likelihood is considered, since the evidence does not change in the same analysis. The posterior is proportional to this product:
 
-  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e1a83fc9b2788b4a72bbc4c90d06c67bb7e0fdae" width="60%" style="background:#FFFFFF;"/>
+  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e1a83fc9b2788b4a72bbc4c90d06c67bb7e0fdae" width="70%" style="background:#FFFFFF;"/>
 
 - The **maximum a posteriori**, which is the mode of the posterior and is often computed in Bayesian statistics using mathematical optimization methods, remains the same. The posterior can be approximated even without computing the exact value of `P(B)` with methods such as **Markov chain Monte Carlo** or **Variational inference** Bayesian methods.
 
@@ -151,7 +141,7 @@ _The probability of one event given the occurrence of another event is called th
 
     - If we got a blue marble before, then the chance of a blue marble next is 1 in 4
 
-      <img src="https://www.mathsisfun.com/data/images/probability-marbles1.svg" width="60%"/>
+      <img src="https://www.mathsisfun.com/data/images/probability-marbles1.svg" width="70%"/>
 
 `P(B|A)` is also called the **"Conditional Probability"** of B given A.
 
